@@ -1,0 +1,11 @@
+{
+  "name": "dsh-python-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Discovers the DSH Python environment and exposes it as managed DSH_* shell facts (DSH_PYTHON_ENV, DSH_PYTHON, DSH_UV) on every shell call.",
+  "exports": { ".": "./index.js" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
